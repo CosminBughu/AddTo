@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-------------- MODAL-------- -->
+    <div id="spoiler" role="aria-hidden">
+        <form action="" method="POST" id="saveEdit">
+            <input type="text" id="edit-name">
+            <input type="submit" value="Edit">
+            <a onclick="ClooseInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+
+    <!----------- FORM TO ADD -------------------->
+<div class="container  align-self-sm-center mt-5">
+    <form  action="" method="POST" onsubmit="app.Add()">
+        <div class="form-group"> 
+          <input type="text" class="form-control" id="add-name" placeholder="New country"> 
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <br><br>
+      <p id="counter" class="lead display-4"></p>
+
+
+    </div>
+    
+    <div class="container">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="row">#</th>
+                <th scope="row">Name</th>
+                <th scope="row">Population</th>
+                <th scope="row" style="width: 13%">Actions</th>        
+              </tr>
+            </thead>
+            <tbody id="countries">
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                </tr>
+            </tbody>
+            </table>
+    </div>
+
+
+
+    <!--------------------------- JS SCRIPT ----------------------------------->
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+ 
+</body>
+</html>
